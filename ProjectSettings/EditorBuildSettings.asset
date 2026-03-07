@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: ea71b396d8dbd604e9ebbf7c213d36bd
+  - enabled: 1
+    path: Assets/Scenes/ARScene.unity
+    guid: 589cce60cc36f2744a31957d373d1a4f
+  - enabled: 0
+    path: Assets/Scenes/old/ARLevel.unity
+    guid: dee69b37234f88b429bdedb177de7afc
+  - enabled: 0
+    path: Assets/Scenes/old/StreamlineLevel.unity
+    guid: dbdded24d505b8f43b158dc841c51ef5
+  - enabled: 0
+    path: Assets/Scenes/old/Pumpenkennlinie_alt.unity
+    guid: 15b1877fbbdeff84a867e2c293483993
+  - enabled: 1
+    path: Assets/Scenes/Pumpenkennlinie.unity
+    guid: fbe5f9ebc5336ef4db1d8f96752e449b
+  - enabled: 1
+    path: Assets/Scenes/ReihenParallelSchaltung.unity
+    guid: e7267275efcc9654992964e569e105e7
+  - enabled: 1
+    path: Assets/Scenes/Pumpenlevel.unity
+    guid: a709c8aaacef0cc499636fde04e34c9d
+  - enabled: 1
+    path: Assets/Scenes/Farbfaden.unity
+    guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/Kreuzstrom.unity
+    guid: 3fc8acdd13e6c734bafef6554d6fdbcd
+  - enabled: 1
+    path: Assets/Scenes/SurfacePlot.unity
+    guid: b69162a020123f6418ccfe28fccf5238
+  m_configObjects:
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 95ec5cb4410e67047ade8211f2430341, type: 2}
+    com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000, guid: eaf79036c78094449bfd0333cee55cb9, type: 2}
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 0dfb044be6999184e8c16302f6c0d466, type: 2}
+    com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: 70bee439954020f4b91bab4c89277115, type: 2}
+    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 9902e9635c8e4934e92cbd7984ee1fb7, type: 2}
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 83d90cdd9bebb384299e24827e73c65b, type: 3}
+    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: e1d60809f70a241498476100b88ff011, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 103c4e235104b69438764cd67363d2bd, type: 2}
+  m_UseUCBPForAssetBundles: 0

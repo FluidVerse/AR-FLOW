@@ -1,0 +1,47 @@
+.action_log_background {
+    width: 80%;
+    align-self: stretch;
+    align-items: stretch;
+    align-content: stretch;
+    justify-content: flex-start;
+    flex-grow: 1;
+    flex-direction: row;
+    border-radius: 40px;
+    border-color: rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: 8px 4px 4px;
+    padding: 8px 0;
+}
+
+.action_log_label_icon {
+    font-size: 36px;
+    -unity-font-definition: url("project://database/Assets/Fonts/NotoColorEmoji.ttf");
+    width: 64px;
+    margin-left: 16px;
+    -unity-text-align: middle-center;
+}
+
+.action_log_label_text {
+    font-size: 36px;
+    -unity-text-align: middle-left;
+    white-space: normal;
+    margin-right: 96px;
+}
+
+.action_log_item_hidden {
+    transition-property: translate, opacity;
+    transition-duration: 500ms;
+    transition-timing-function: ease-out-cubic;
+    transition-delay: 0s;
+    translate: -110% 0;
+    opacity: 0;
+}
+
+.action_log_item_visible {
+    transition-property: translate, opacity;
+    transition-duration: 500ms;
+    transition-timing-function: ease-out-back;
+    transition-delay: 0s;
+    translate: 0% 0;
+    opacity: 1;
+}

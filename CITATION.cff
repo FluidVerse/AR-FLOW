@@ -1,0 +1,48 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: "Behr"
+    given-names: "Alexander S."
+  - family-names: "Aurich"
+    given-names: "Daniel"
+  - family-names: "Figge"
+    given-names: "Daniel"
+  - family-names: "Bredberg"
+    given-names: "Oscar"
+  - family-names: "Finke"
+    given-names: "Jacqueline"
+  - family-names: "Neumann"
+    given-names: "Jakub"
+  - family-names: "Boettcher"
+    given-names: "Konrad"
+  - family-names: "Brümmer"
+    given-names: "Andreas"
+title: "AR FLOW"
+repository-code: "https://github.com/FluidVerse/AR-FLOW"
+license: MIT
+preferred-citation:
+  type: article
+  authors:
+    - family-names: "Behr"
+      given-names: "Alexander S."
+    - family-names: "Aurich"
+      given-names: "Daniel"
+    - family-names: "Figge"
+      given-names: "Daniel"
+    - family-names: "Bredberg"
+      given-names: "Oscar"
+    - family-names: "Finke"
+      given-names: "Jacqueline"
+    - family-names: "Neumann"
+      given-names: "Jakub"
+    - family-names: "Boettcher"
+      given-names: "Konrad"
+    - family-names: "Brümmer"
+      given-names: "Andreas"
+  doi: "10.1002/pamm.70085"
+  journal: "PAMM"
+  title: "Innovative Fluid Mechanics Education Through Augmented Reality and Interactive Learning"
+  volume: 26
+  issue: 1
+  start: e70085
+  year: 2026

@@ -1,0 +1,225 @@
+fileFormatVersion: 2
+guid: 51698e063c6402c48a15e9137c35cd37
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PotentialZylinderParallel_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 610
+        height: 293
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8abf9c2b4de1ef44d9ddcac0326aea5b
+      internalID: 133118942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 1d3f3f0f35163af42946c65beba732aa
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PotentialZylinderParallel_0: -1831385872
+      PotentialZylinderParallel_1: 745534944
+      PotentialZylinderParallel_10: -1441775834
+      PotentialZylinderParallel_11: 608327947
+      PotentialZylinderParallel_12: 1051193845
+      PotentialZylinderParallel_13: -210256983
+      PotentialZylinderParallel_14: -92344982
+      PotentialZylinderParallel_15: 883492929
+      PotentialZylinderParallel_16: -2062769744
+      PotentialZylinderParallel_17: 1435143011
+      PotentialZylinderParallel_18: -823717702
+      PotentialZylinderParallel_19: 133118942
+      PotentialZylinderParallel_2: 1055521568
+      PotentialZylinderParallel_20: -425209254
+      PotentialZylinderParallel_21: 1157455448
+      PotentialZylinderParallel_22: 1520968354
+      PotentialZylinderParallel_23: -227456726
+      PotentialZylinderParallel_24: 849743633
+      PotentialZylinderParallel_25: -1583532327
+      PotentialZylinderParallel_26: -1635550009
+      PotentialZylinderParallel_27: 1838367024
+      PotentialZylinderParallel_28: 236024800
+      PotentialZylinderParallel_29: -1231233411
+      PotentialZylinderParallel_3: -1614650420
+      PotentialZylinderParallel_30: -929141548
+      PotentialZylinderParallel_31: -1692809105
+      PotentialZylinderParallel_32: 1986534339
+      PotentialZylinderParallel_33: -1205913165
+      PotentialZylinderParallel_34: 740340682
+      PotentialZylinderParallel_35: -122896579
+      PotentialZylinderParallel_36: 231178215
+      PotentialZylinderParallel_37: 1294974870
+      PotentialZylinderParallel_38: 1406704080
+      PotentialZylinderParallel_39: -965916454
+      PotentialZylinderParallel_4: -930551354
+      PotentialZylinderParallel_40: -1782399430
+      PotentialZylinderParallel_41: 1761379356
+      PotentialZylinderParallel_42: -1432763014
+      PotentialZylinderParallel_43: 1151990797
+      PotentialZylinderParallel_44: 685499774
+      PotentialZylinderParallel_45: 795868193
+      PotentialZylinderParallel_46: 1750912958
+      PotentialZylinderParallel_47: -2102275461
+      PotentialZylinderParallel_48: -938826152
+      PotentialZylinderParallel_49: 858036237
+      PotentialZylinderParallel_5: 715507149
+      PotentialZylinderParallel_50: -170712191
+      PotentialZylinderParallel_51: 975158927
+      PotentialZylinderParallel_52: 1967509920
+      PotentialZylinderParallel_53: -1127513946
+      PotentialZylinderParallel_54: 943639824
+      PotentialZylinderParallel_55: -451878111
+      PotentialZylinderParallel_56: 1552633438
+      PotentialZylinderParallel_57: 1364838046
+      PotentialZylinderParallel_58: -315243288
+      PotentialZylinderParallel_59: -547765417
+      PotentialZylinderParallel_6: -1677662307
+      PotentialZylinderParallel_60: -1686377330
+      PotentialZylinderParallel_61: -1801439486
+      PotentialZylinderParallel_62: 1302898376
+      PotentialZylinderParallel_63: 1583353746
+      PotentialZylinderParallel_64: -1709603862
+      PotentialZylinderParallel_65: 197907435
+      PotentialZylinderParallel_66: -2029904770
+      PotentialZylinderParallel_67: -1677185103
+      PotentialZylinderParallel_68: -2029761876
+      PotentialZylinderParallel_69: -1010544980
+      PotentialZylinderParallel_7: -60505600
+      PotentialZylinderParallel_70: -51363721
+      PotentialZylinderParallel_71: 342991491
+      PotentialZylinderParallel_72: 2015585264
+      PotentialZylinderParallel_8: -1478242742
+      PotentialZylinderParallel_9: 1982952667
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

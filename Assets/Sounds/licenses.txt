@@ -1,0 +1,5 @@
+pump-circulate.mp3: https://pixabay.com/de/sound-effects/circulate-69390/
+valve-switch.mp3: https://pixabay.com/sound-effects/button-click-switch-valve-water-drips-30548/
+footsteps.mp3: https://pixabay.com/de/sound-effects/concrete-footsteps-6752/
+button-click.mp3: https://pixabay.com/de/sound-effects/click-button-140881/
+workshop-background.mp3: https://pixabay.com/sound-effects/workshop-noise-26767/

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4929ce4cfa2544c0ac3ffe779184284b, type: 3}
+  m_Name: KreiselpumpeAR1
+  m_EditorClassIdentifier: 
+  key: kreiselpumpe1
+  modelName: Centrifugal pump
+  prefab: {fileID: 66186944953335774, guid: a00cd12cd4d39c249b5ac29c14cf6d53, type: 3}
+  anchorImageLibrary: {fileID: 11400000, guid: 11f0d881b4c53a841accb1264f87c9bc, type: 2}
+  positionOffset: {x: 0, y: 0, z: 0}
+  rotationOffset: {x: 0, y: 0, z: 0}
+  scale: {x: 0.09, y: 0.09, z: 0.09}

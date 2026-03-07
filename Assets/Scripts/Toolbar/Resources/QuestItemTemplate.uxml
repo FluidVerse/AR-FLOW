@@ -1,0 +1,12 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:VisualElement name="QuestItem" style="flex-grow: 1; flex-direction: row; width: 100%; justify-content: flex-start; align-self: auto; align-content: flex-start; align-items: center; background-color: rgb(255, 255, 255); border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; border-bottom-left-radius: 20px; margin-top: 20px; margin-bottom: 20px;">
+        <engine:VisualElement style="flex-grow: 0; align-self: center; align-content: flex-start; justify-content: flex-start; margin-left: 20px; margin-right: 20px; align-items: center;">
+            <engine:VisualElement name="ImageQuestOpen" style="flex-grow: 0; background-image: url(&quot;project://database/Assets/Bilder/Toolbar/ImageQuestOpen.png?fileID=21300000&amp;guid=271786da6200eae48ac2a5157c780a43&amp;type=3#ImageQuestOpen&quot;); -unity-background-scale-mode: scale-to-fit; align-content: center; align-self: center; justify-content: flex-start; align-items: auto; width: 100px; height: 100px; max-width: 100px; margin-left: 0; margin-right: 0; display: flex;" />
+            <engine:VisualElement name="ImageQuestDone" style="flex-grow: 0; background-image: url(&quot;project://database/Assets/Bilder/Toolbar/ImageQuestDone.png?fileID=21300000&amp;guid=3b276d964cc8a8e4b837a6ff5dc28d3f&amp;type=3#ImageQuestDone&quot;); -unity-background-scale-mode: scale-to-fit; align-content: center; align-self: center; justify-content: flex-start; align-items: auto; width: 100px; height: 100px; max-width: 100px; margin-left: 0; margin-right: 0;" />
+        </engine:VisualElement>
+        <engine:VisualElement name="Container" style="flex-grow: 1;">
+            <engine:Label text="Aufgabe" name="QuestName" style="font-size: 50px; -unity-font-style: bold;" />
+            <engine:Label text="ggg" name="Description" style="font-size: 30px; white-space: pre-wrap; -unity-text-align: upper-left;" />
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>
