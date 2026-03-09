@@ -1,5 +1,7 @@
 # ![AR FLOW](Assets/Images/Logo_Entwurf.png)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18922067.svg)](https://doi.org/10.5281/zenodo.18922067)
+
 AR FLOW is an educational mobile game designed for interactive fluid mechanics education. Using virtual laboratories and a
 variety of other levels, the application enables students to conduct interactive flow experiments and simulate
 pump-piping systems using Android smartphones or tablets.
