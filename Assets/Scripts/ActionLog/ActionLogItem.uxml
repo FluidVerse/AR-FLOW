@@ -1,0 +1,4 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Scripts/Resources/ActionLogStyleSheet.uss?fileID=7433441132597879392&amp;guid=9980a16c12a7c0b4d80b6943d857146b&amp;type=3#ActionLogStyleSheet" />
+    <ActionLog.ActionLogItem />
+</engine:UXML>

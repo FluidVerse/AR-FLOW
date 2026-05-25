@@ -1,0 +1,4 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Scripts/MainMenu/Resources/LevelMenuStyleSheet.uss?fileID=7433441132597879392&amp;guid=226a91302029941469151eb49385cf7b&amp;type=3#LevelMenuStyleSheet" />
+    <MainMenu.LevelMenuItem />
+</engine:UXML>

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d468a3398e8e863418aa72c131b88e65, type: 3}
+  m_Name: LevelPumpeAR
+  m_EditorClassIdentifier: 
+  id: 3
+  showInMenu: 1
+  displayName: AR Centrifugal Pump
+  displayHint: Level 3
+  sceneName: ARScene
+  modelKey: kreiselpumpe1
+  levelImage: {fileID: 2800000, guid: 8fe50fc22cbd6024691b54ce51b4a454, type: 3}

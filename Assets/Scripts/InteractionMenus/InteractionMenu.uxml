@@ -1,0 +1,6 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Scripts/InteractionMenus/Resources/InteractionMenuStyleSheet.uss?fileID=7433441132597879392&amp;guid=abb067dc11ed55a40a5826e6cf6bf407&amp;type=3#InteractionMenuStyleSheet" />
+    <InteractionMenus.InteractionMenu />
+</engine:UXML>
+<!-- To display this menu in Unity UI Builder for development purposes, 
+comment out the marked line in InteractionMenu.InitializeWindow() -->
