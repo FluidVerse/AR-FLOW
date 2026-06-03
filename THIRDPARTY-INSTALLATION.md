@@ -45,10 +45,22 @@ and references:
 * `Assets/Joystick Pack/`
 * `Assets/Kevin Iglesias/` (contains both the Dummy model and Animations)
 
-### Asset Usage & Manual Fixes
+### Known issue (compile error)
 
-If the project still reports missing scripts or broken prefabs after importing, follow these steps to manually resolve
-references in the main prefab:
+After importing the Joystick Pack, you may encounter the following compile error in the Unity console: 
+`Assets/Joystick Pack/Scripts/Editor/JoystickEditor.cs(7,31): error CS0118: 'Editor' is a namespace but is used 
+like a type`.
+
+**Workaround**: open `Assets/Joystick Pack/Scripts/Editor/JoystickEditor.cs` and change line 7 from: `public class 
+JoystickEditor : Editor` to `public class JoystickEditor : UnityEditor.Editor`.
+
+We will fix this error in a future release, please use this workaround until then.
+
+
+### Asset Usage & Manual Fixes
+The public release retains the `.meta` files of these assets, so all references from our code to these assets 
+should be resolved automatically after importing. However, if the project still reports missing scripts or broken 
+prefabs after importing, follow these steps to manually resolve references in the main prefab:
 
 **1. Joystick Pack**
 
