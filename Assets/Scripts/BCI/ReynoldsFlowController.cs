@@ -613,7 +613,9 @@ namespace BCI {
                 }
             } else if (zustand == "laminar" && Re > 0) {
                 //turbThreshold/rho/0.036f*eta = u_vel_max
-                float m = (u_vel/(turbThreshold / rho / 0.036f * eta));
+                //float m = (u_vel/(turbThreshold / rho / 0.036f * eta));
+                //float m = (u_vel/20f);
+                float m = 1.0f;
 
                 for (int i = 0; i <= 260; i++) {
                     //double y = (float)(i) / 10;
