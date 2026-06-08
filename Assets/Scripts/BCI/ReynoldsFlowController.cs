@@ -526,7 +526,8 @@ namespace BCI {
                     n = 4f + (11f - 4f);
                 }
 
-                for (int i = 0; i <= 260; i++) {
+                for (int i = 0; i <= 260; i++)
+                {
                     double y = (float)(i) / 10;
 
                     //double salama = -975f + 240 * Math.Pow(1 - Math.Pow(Math.Abs(250f - y) / 250f, m), 1 / n);
@@ -536,12 +537,13 @@ namespace BCI {
                     // (1f-i/260f) bedeutet halber kanal wird dargestellt
                     // (1f-i/520f) bedeutet viertel kanal wird dargestellt
                     // (1f-i/1040f) bedeutet achtel kanal wird dargestellt
+                    
                     if (u_normieren) {
-                        double salama = 250f * Math.Pow(1 - Math.Pow(Math.Abs(1f - i / zoom), m), 1 / n);
-                        double salamaG = 250f * Math.Pow(1 - Math.Pow(Math.Abs(1f - i / 130f), m), 1 / n);
+                        salama = 250f * Math.Pow(1 - Math.Pow(Math.Abs(1f - i / zoom), m), 1 / n);
+                        salamaG = 250f * Math.Pow(1 - Math.Pow(Math.Abs(1f - i / 130f), m), 1 / n);
                     } else {
-                        double salama = 250f * Math.Pow(1 - Math.Pow(Math.Abs(1f - i / zoom), m), 1 / n) * u_vel;
-                        double salamaG = 250f * Math.Pow(1 - Math.Pow(Math.Abs(1f - i / 130f), m), 1 / n) * u_vel;
+                        salama = 250f * Math.Pow(1 - Math.Pow(Math.Abs(1f - i / zoom), m), 1 / n) * u_vel;
+                        salamaG = 250f * Math.Pow(1 - Math.Pow(Math.Abs(1f - i / 130f), m), 1 / n) * u_vel;
                     }
                     //Vector3 currentPosition = new Vector3((float)(salama), (float)(i) - 604f, -1f);
                     //Vector3 currentPosition = new Vector3((float)(salama), (float)(i) - plotUrsprung.y, -1f);
@@ -584,7 +586,7 @@ namespace BCI {
                     // (1f-i/260f) bedeutet halber kanal wird dargestellt
                     // (1f-i/520f) bedeutet viertel kanal wird dargestellt
                     // (1f-i/1040f) bedeutet achtel kanal wird dargestellt
-
+                    //Debug.Log($"Hello");
 
                     if (u_normieren) {
                         powerlawG = 250f * Math.Pow(1 - Math.Abs((1f - i / 130f)), m);
@@ -606,7 +608,8 @@ namespace BCI {
                     lineGross.SetPosition(lineGross.positionCount - 1, currentPositionG);
                 }
             } else if (zustand == "laminar" && Re > 0) {
-                float m = (Re / turbThreshold);
+                //2300 = rho*u_vel*0.036f/eta
+                float m = (u_vel/20.0f);
 
                 for (int i = 0; i <= 260; i++) {
                     //double y = (float)(i) / 10;
