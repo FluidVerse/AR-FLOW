@@ -308,7 +308,7 @@ namespace BCI {
 
                     if (pos.x > wackelStartX && partVel.x >= 0.1) {
                         float dist = pos.x - wackelStartX;
-                        float amplitude = Mathf.Clamp(dist * 0.01f * reScale, 0f, 10f);
+                        //float amplitude = Mathf.Clamp(dist * 0.01f * reScale, 0f, 10f);
                         float randomOffset = UnityEngine.Random.Range(-1f, 1f);
                         float k = 10f;
 
@@ -353,6 +353,7 @@ namespace BCI {
                         //partVel.x += uStrich;
                         if (Math.Abs(uStrich) <= Math.Abs(2.5 * partVel.x)) {
                             partVel.y += uStrich;
+                            partVel.x += randomOffset;
                             particles[i].velocity = partVel;
                         } else {
                         }
@@ -506,10 +507,10 @@ namespace BCI {
             float zoom = 520f;
 
             if (kd == true) {
-                kdText.text = "k/d = 0.05";
+                kdText.text = "k/d = 0,05";
                 reMax = 15000;
             } else {
-                kdText.text = "k/d = 0.01";
+                kdText.text = "k/d = 0,01";
                 reMax = 100000;
             }
 
