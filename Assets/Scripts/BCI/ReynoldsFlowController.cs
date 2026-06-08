@@ -310,7 +310,8 @@ namespace BCI {
                         float dist = pos.x - wackelStartX;
                         //float amplitude = Mathf.Clamp(dist * 0.01f * reScale, 0f, 10f);
                         float randomOffset = UnityEngine.Random.Range(-1f, 1f);
-                        float k = 10f;
+                        float randomOffsetx = UnityEngine.Random.Range(-1f, 1f);
+                        float k = 5f;
 
                         //u(x,y,z,t) = u_quer + k*y* du/dy  * random-Normalverteilung
                         // evtl. u_quer raus ?
@@ -347,13 +348,15 @@ namespace BCI {
                         //float dudy = partVel.x;
                         //float uStrich = pos.y/125f * dudy * k * randomOffset;
                         //float uStrich = uQuer + dudy * k * randomOffset ;
-                        float uStrich = uQuer * k * randomOffset * reScale;
+                        //float uStrich = uQuer * k * randomOffset * reScale;
+                        float uStrich = uQuer * k * randomOffset;
+                        float vStrich = uQuer * k * randomOffsetx;
                         // float uStrich = dudy * k * randomOffset;
 
                         //partVel.x += uStrich;
                         if (Math.Abs(uStrich) <= Math.Abs(2.5 * partVel.x)) {
                             partVel.y += uStrich;
-                            partVel.x += randomOffset;
+                            partVel.x += vStrich;
                             particles[i].velocity = partVel;
                         } else {
                         }
@@ -543,8 +546,8 @@ namespace BCI {
                         salama = 250f * Math.Pow(1 - Math.Pow(Math.Abs(1f - i / zoom), m), 1 / n);
                         salamaG = 250f * Math.Pow(1 - Math.Pow(Math.Abs(1f - i / 130f), m), 1 / n);
                     } else {
-                        salama = 250f * Math.Pow(1 - Math.Pow(Math.Abs(1f - i / zoom), m), 1 / n) * u_vel;
-                        salamaG = 250f * Math.Pow(1 - Math.Pow(Math.Abs(1f - i / 130f), m), 1 / n) * u_vel;
+                        salama = 250f * Math.Pow(1 - Math.Pow(Math.Abs(1f - i / zoom), m), 1 / n) * u_vel / 10f;
+                        salamaG = 250f * Math.Pow(1 - Math.Pow(Math.Abs(1f - i / 130f), m), 1 / n) * u_vel / 10f;
                     }
                     //Vector3 currentPosition = new Vector3((float)(salama), (float)(i) - 604f, -1f);
                     //Vector3 currentPosition = new Vector3((float)(salama), (float)(i) - plotUrsprung.y, -1f);
@@ -593,8 +596,8 @@ namespace BCI {
                         powerlawG = 250f * Math.Pow(1 - Math.Abs((1f - i / 130f)), m);
                         powerlaw = 250f * Math.Pow(1 - Math.Abs((1f - i / zoom)), m);
                     } else {
-                        powerlawG = 250f * Math.Pow(1 - Math.Abs((1f - i / 130f)), m) * u_vel;
-                        powerlaw = 250f * Math.Pow(1 - Math.Abs((1f - i / zoom)), m) * u_vel;
+                        powerlawG = 250f * Math.Pow(1 - Math.Abs((1f - i / 130f)), m) * u_vel / 10f;
+                        powerlaw = 250f * Math.Pow(1 - Math.Abs((1f - i / zoom)), m) * u_vel/10f;
                     }
 
                     Vector3 currentPosition = new Vector3((float)(powerlaw) - 120f, (float)(i) - 127f, -1f);
@@ -609,8 +612,8 @@ namespace BCI {
                     lineGross.SetPosition(lineGross.positionCount - 1, currentPositionG);
                 }
             } else if (zustand == "laminar" && Re > 0) {
-                //2300 = rho*u_vel*0.036f/eta
-                float m = (u_vel/20.0f);
+                //turbThreshold/rho/0.036f*eta = u_vel_max
+                float m = (u_vel/(turbThreshold / rho / 0.036f * eta));
 
                 for (int i = 0; i <= 260; i++) {
                     //double y = (float)(i) / 10;
@@ -621,11 +624,12 @@ namespace BCI {
                     // (1f-i/1040f) bedeutet achtel kanal wird dargestellt
 
                     if (u_normieren) {
-                        laminar = m * (260f - 260f * Math.Pow((1f - i / zoom), 2));
-                        laminarG = m * (260f - 260f * Math.Pow((1f - i / 130f), 2));
+                        laminar = m * (250f - 250f * Math.Pow((1f - i / zoom), 2));
+                        laminarG = m * (250f - 250f * Math.Pow((1f - i / 130f), 2));
                     } else {
-                        laminar = m * (260f - 260f * Math.Pow((1f - i / zoom), 2)) * u_vel;
-                        laminarG = m * (260f - 260f * Math.Pow((1f - i / 130f), 2)) * u_vel;
+                        laminar = m * (250f - 250f * Math.Pow((1f - i / zoom), 2)) * u_vel / 10f;
+                        laminarG = m * (250f - 250f * Math.Pow((1f - i / 130f), 2)) * u_vel / 10f;
+                        //powerlawG = 250f * Math.Pow(1 - Math.Abs((1f - i / 130f)), m) * u_vel / 10f;
                     }
 
                     //Vector3 currentPosition = new Vector3((float)(laminar)-120f, (float)(i)-127f, -1f);
